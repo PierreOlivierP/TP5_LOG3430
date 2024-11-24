@@ -22,5 +22,7 @@ jobs:
           python -m locustfile &
           echo "Waiting for Flask server to start"
           sleep 30
-          python -m server
-          sleep 120
+          python -m server &
+          sleep 10
+          echo "The server is up and running"
+          
