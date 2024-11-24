@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 name: Run Locust Tests on Commit
   on:
     push:
@@ -23,6 +22,3 @@ jobs:
           ............ &
           echo "Waiting for Flask server to start"
           sleep 30
-=======
-
->>>>>>> 5a738982f924f8c8158b6dd9889fdeb63eaeda20
