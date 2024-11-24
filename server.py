@@ -32,10 +32,5 @@ def echo():
     message = data.get("message", "No message sent")
     return jsonify({"echo": message})
 
-@app.route('/heavier')
-def heavier():
-    time.sleep(6)  # Simulate heavy processing time
-    return jsonify({"message": "This took a while!"})
-
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
