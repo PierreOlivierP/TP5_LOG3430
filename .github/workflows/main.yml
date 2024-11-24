@@ -23,6 +23,6 @@ jobs:
           echo "Waiting for Flask server to start"
           sleep 30
           python -m server &
-          sleep 20
+          sleep 120
           echo "The server is up and running"
           
