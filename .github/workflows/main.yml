@@ -1,6 +1,6 @@
 name: Run Locust Tests on Commit
 on:
-  commit:
+  push:
     branches:
       - main
 jobs:
@@ -22,3 +22,4 @@ jobs:
           python -m locustfile &
           echo "Waiting for Flask server to start"
           sleep 30
+          python -m server
