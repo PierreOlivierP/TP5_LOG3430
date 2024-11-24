@@ -19,6 +19,6 @@ jobs:
           python -m pip install -r requirements.txt
       - name: Start Flask server
         run: |
-          python -m locustfile.py &
+          python -m locustfile &
           echo "Waiting for Flask server to start"
           sleep 30
